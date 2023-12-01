@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <style>
+            
         * {
             box-sizing: auto border-box;
             color: #000000;
@@ -24,6 +25,8 @@
             overflow-x: scroll;
             scroll-behavior: smooth;
             scroll-snap-type: x mandatory;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .carrousel_ecran {
@@ -43,9 +46,7 @@
         .carrousel_btn {
             position: absolute;
             top: calc(min(500px, 100vw) / 16 * 9 / 2 + 1rem);
-            /* centre verticalement ~50% vertical */
             transform: translateY(-50%);
-            /* methode du point mort */
             width: 2rem;
             height: 2rem;
             background: rgba(0, 0, 0, 0.5);
@@ -90,7 +91,6 @@
             background-color: #ff9d9d;
             transition: ease-in-out 0.5s;
         }
-        
     </style>
 </head>
 
